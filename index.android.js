@@ -3,14 +3,22 @@
 // Import a library to help create a Component
 import React from 'react';
 // This means I only want these components from the react-native library
-import { AppRegistry } from 'react-native';
+import { AppRegistry, View } from 'react-native';
 import Header from './src/components/header';
+import AlbumList from './src/components/AlbumList';
 
 // Create a Component
 const App = () => (
     // Component nesting: put one component inside another
-    <Header headerText={'Albums!'} />
+    // It must always return only one element, that's why we should wrap all
+    // the elements
+    <View>
+      <Header headerText={'Albums!'} />
+      <AlbumList />
+    </View>
 );
+
+// https://rallycoding.herokuapp.com/api/music_albums
 
 // Render it to the device
 
