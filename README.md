@@ -45,7 +45,7 @@ state -> component's intern record keeping
 
 
 ### justifyContent
-In a row direction of fields:
+In a column direction (`flexDirection: 'column'`) of fields:
 - Default: aligns on the top left.
 - flex-start: default
 - flex-end: : aligns on the bottom left.
