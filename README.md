@@ -6,13 +6,13 @@ Files and notes from the Complete React Native and Redux Course (https://www.ude
 ### Basic notes
 - To reference some js variables inside jsx, you must wrap it using curly braces { }
 - "style" is a props of "Text"
-- To make the component available to other parts of the App: 
+- To make the component available to other parts of the App:
 `export default Header;`
 
 ### AppRegistry
 - The first parameter must match the project name
 - The second parameter must be a function that returns the first component to render the application
-- Only the root component uses AppRegistry: 
+- Only the root component uses AppRegistry:
 `AppRegistry.registerComponent('albums', () => App);`
 
 ### Component nesting
@@ -42,3 +42,14 @@ Files and notes from the Complete React Native and Redux Course (https://www.ude
 props -> parent to child communication
 
 state -> component's intern record keeping
+
+
+### justifyContent
+In a row direction of fields:
+- Default: aligns on the top left.
+- flex-start: default
+- flex-end: : aligns on the bottom left.
+- center: centers vertically
+- space-between: spaces components evenly vertically
+- space-around: spaces evenly between components and between components and
+limits
