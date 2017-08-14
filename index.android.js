@@ -12,7 +12,7 @@ const App = () => (
     // Component nesting: put one component inside another
     // It must always return only one element, that's why we should wrap all
     // the elements
-    <View>
+    <View style={{ flex: 1 }}>
       <Header headerText={'Albums!'} />
       <AlbumList />
     </View>

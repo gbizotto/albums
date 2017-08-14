@@ -5,7 +5,7 @@ Files and notes from the Complete React Native and Redux Course (https://www.ude
 
 ### Basic notes
 - To reference some js variables inside jsx, you must wrap it using curly braces { }
-- "style" is a props of "Text"
+- `style` is a props of `Text`
 - To make the component available to other parts of the App:
 `export default Header;`
 
@@ -25,7 +25,7 @@ Files and notes from the Complete React Native and Redux Course (https://www.ude
 - Handles any data that might change (fetching data, user events, etc).
 - Knows when it gets rendered to the device (useful for data fetching).
 - More code to write.
-- It MUST override the render method!
+- It MUST override the `render` method!
 
 ### Functional Component.
 - Used for presenting static data.
@@ -51,5 +51,35 @@ In a column direction (`flexDirection: 'column'`) of fields:
 - flex-end: : aligns on the bottom left.
 - center: centers vertically
 - space-between: spaces components evenly vertically
-- space-around: spaces evenly between components and between components and
-limits
+- space-around: spaces evenly and vertically between components and between
+components and limits
+* "Column" is the default flexDirection.
+
+In a row direction (`flexDirection: 'row'`) of fields:
+- Default: aligns on the top left.
+- flex-start: default
+- flex-end: : aligns on the bottom left.
+- center: centers horizontally
+- space-between: spaces components evenly horizontally
+- space-around: spaces evenly and horizontally between components and between
+components and limits
+
+### ScrollView
+- When you use a `ScrollView`, the root component must use the following style:
+`style={{ flex: 1 }}`
+- As an example:
+
+`
+<View style={{ flex: 1 }}>
+  <Header headerText={'Albums!'} />
+  <AlbumList />
+</View>
+`
+
+Inside `AlbumList`
+
+`
+<ScrollView>
+  {this.renderAlbums()}
+</ScrollView>
+`
