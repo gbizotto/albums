@@ -19,7 +19,11 @@ State:
 - A plain js object used to record and respond to user-triggered events.
 - When we need to update what a component shows, call this.setState.
 - Only CHANGE state with setState, do not do this.state.
+*/
 
+/*
+props -> parent to child communication
+state -> component's intern record keeping
 */
 
 class AlbumList extends Component {
@@ -35,10 +39,18 @@ class AlbumList extends Component {
     .then(response => this.setState({ albums: response.data }));
   }
 
+  renderAlbums() {
+    // To reference some js variables inside jsx, you must wrap it using
+    // curly braces { }
+    return this.state.albums.map(album =>
+      <Text key={album.title}>{album.title}</Text>
+    );
+  }
+
   render() {
     return (
       <View>
-        <Text>Album List!</Text>
+        {this.renderAlbums()}
       </View>
     );
   }
