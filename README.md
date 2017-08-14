@@ -1,7 +1,7 @@
 # albums
 React Native study project
 
-Files and notes from the Complete React Native and Redux Course
+Files and notes from the Complete React Native and Redux Course (https://www.udemy.com/the-complete-react-native-and-redux-course)
 
 ### Basic notes
 - To reference some js variables inside jsx, you must wrap it using curly braces { }
