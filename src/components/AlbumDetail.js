@@ -20,8 +20,7 @@ const AlbumDetail = ({ album }) => {
         <View style={thumbnailContainerStyle}>
           <Image
             style={thumbnailStyle}
-            source={{ uri: thumbnail_image }}
-            />
+            source={{ uri: thumbnail_image }} />
         </View>
 
         <View style={headerContainerStyle}>
