@@ -42,7 +42,3 @@ Files and notes from the Complete React Native and Redux Course
 props -> parent to child communication
 
 state -> component's intern record keeping
-
-
-To reference some js variables inside jsx, you must wrap it using
-    // curly braces { }
