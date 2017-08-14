@@ -6,6 +6,14 @@ import { Text, View } from 'react-native';
 
 // Flexbox is a system of positioning elements within a container
 
+/*
+This is a functional component.
+- Used for presenting static data.
+- Can't handle fetching data.
+- Easy to write.
+
+*/
+
 const Header = (props) => {
   // deestructuring
   const { textStyle, viewStyle } = styles;

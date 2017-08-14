@@ -18,8 +18,6 @@ const App = () => (
     </View>
 );
 
-// https://rallycoding.herokuapp.com/api/music_albums
-
 // Render it to the device
 
 // the first parameter must match the project name
