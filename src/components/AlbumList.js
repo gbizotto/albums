@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 // deestructuring
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 import axios from 'axios';
+import AlbumDetail from './AlbumDetail';
 
 /*
 Class component / Class based
@@ -43,7 +44,7 @@ class AlbumList extends Component {
     // To reference some js variables inside jsx, you must wrap it using
     // curly braces { }
     return this.state.albums.map(album =>
-      <Text key={album.title}>{album.title}</Text>
+      <AlbumDetail key={album.title} album={album} />
     );
   }
 
