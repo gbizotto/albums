@@ -46,6 +46,7 @@ state -> component's intern record keeping
 
 ### justifyContent
 In a column direction (`flexDirection: 'column'`) of fields:
+- Similar to LinearLayout, orientation vertical in Android.
 - Default: aligns on the top left.
 - flex-start: default
 - flex-end: : aligns on the bottom left.
@@ -56,6 +57,7 @@ components and limits
 * "Column" is the default flexDirection.
 
 In a row direction (`flexDirection: 'row'`) of fields:
+- Similar to LinearLayout, orientation horizontal in Android.
 - Default: aligns on the top left.
 - flex-start: default
 - flex-end: : aligns on the bottom left.
